@@ -9,7 +9,6 @@
         "context": "Editor && vim_mode == insert",
         "bindings": {
             "ctrl-h": "editor::Backspace",
-            "backspace": null,
             "ctrl-c": "editor::ShowInlineCompletion",
             "ctrl-l": "editor::AcceptPartialInlineCompletion",
             "ctrl-j": "editor::NextInlineCompletion",
