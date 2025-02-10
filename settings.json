@@ -34,6 +34,7 @@
     "formatter": "language_server",
     "seed_search_query_from_cursor": "selection",
     "use_system_path_prompts": false,
+    "relative_line_numbers": true,
 
     "show_completions_on_input": true,
     "show_inline_completions": false,
