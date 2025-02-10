@@ -1,0 +1,51 @@
+[
+    {
+        "bindings": {
+            "alt-l": ["workspace::ActivatePaneInDirection", "Right"],
+            "alt-h": ["workspace::ActivatePaneInDirection", "Left"]
+        }
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "ctrl-h": "editor::Backspace",
+            "backspace": null,
+            "ctrl-c": "editor::ShowInlineCompletion",
+            "ctrl-l": "editor::AcceptPartialInlineCompletion",
+            "ctrl-j": "editor::NextInlineCompletion",
+            "ctrl-k": "editor::PreviousInlineCompletion"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "alt-x g": ["task::Spawn", { "task_name": "Open lazygit" }],
+            "alt-x c": ["task::Spawn", { "task_name": "Open vs code" }]
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-s": "workspace::SaveAll"
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "ctrl-tab": "pane::ActivateNextItem",
+            "ctrl-shift-tab": "pane::ActivatePrevItem"
+        }
+    },
+    {
+        "context": "vim_mode == visual",
+        "bindings": {
+            "p": ["vim::Paste", { "preserveClipboard": true }]
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-,": null
+        }
+    }
+]
