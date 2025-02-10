@@ -3,7 +3,7 @@
     "label": "Open lazygit",
     "command": "lazygit",
     "env": {
-        "EDITOR": "zed -w"
+        "EDITOR": "zed --wait"
     },
     "use_new_terminal": false,
     "allow_concurrent_runs": false,

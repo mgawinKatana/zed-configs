@@ -43,20 +43,21 @@
         "copilot": true
     },
 
-    "buffer_font_family": "Consolas",
+    "buffer_font_family": "FiraCode Nerd Font",
     "buffer_font_size": 12,
     "buffer_font_weight": 80,
     "buffer_line_height": {
         "custom": 1.4
     },
 
-    "ui_font_family": "Consolas",
+    "ui_font_family": "FiraCode Nerd Font",
     "ui_font_size": 12,
     "ui_font_weight": 80,
 
     "show_whitespaces": "boundary",
     "vertical_scroll_margin": 5,
     "horizontal_scroll_margin": 10,
+    "icon_theme": "VSCode Icons",
     "theme": {
         "mode": "dark",
         "light": "Nightfox",
@@ -81,7 +82,7 @@
     },
 
     "show_wrap_guides": true,
-    "wrap_guides": [80],
+    "wrap_guides": [80, 120],
     "indent_guides": {
         "enabled": true
     },
