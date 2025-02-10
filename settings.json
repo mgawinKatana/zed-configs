@@ -63,7 +63,8 @@
         "dark": "Nightfox"
     },
     "experimental.theme_overrides": {
-        "text.accent": "#ffffffff"
+        "text.accent": "#ffffffff",
+        "editor.invisible": "#FFFFFF08"
     },
     "active_pane_modifiers": {
         "border_size": 0.5,
