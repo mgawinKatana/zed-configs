@@ -43,14 +43,14 @@
         "copilot": true
     },
 
-    "buffer_font_family": "FiraCode Nerd Font",
+    "buffer_font_family": "MesloLGL NF",
     "buffer_font_size": 12,
     "buffer_font_weight": 80,
     "buffer_line_height": {
         "custom": 1.4
     },
 
-    "ui_font_family": "FiraCode Nerd Font",
+    "ui_font_family": "MesloLGL NF",
     "ui_font_size": 12,
     "ui_font_weight": 80,
 
@@ -99,7 +99,7 @@
     "assistant": {
         "default_model": {
             "provider": "copilot_chat",
-            "model": "gpt-4o"
+            "model": "gpt-4"
         },
         "version": "2",
         "enabled": true,
