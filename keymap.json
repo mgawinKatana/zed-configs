@@ -7,7 +7,8 @@
     },
     {
         "bindings": {
-            "ctrl-k *": null
+            "ctrl-k *": null,
+            "ctrl-k": null
         }
     },
     {
