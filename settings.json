@@ -37,9 +37,9 @@
     "relative_line_numbers": true,
 
     "show_completions_on_input": true,
-    "show_inline_completions": false,
+    "show_edit_predictions": true,
     "features": {
-        "inline_completion_provider": "copilot",
+        "edit_prediction_provider": "zed",
         "copilot": true
     },
 
@@ -57,7 +57,7 @@
     "show_whitespaces": "boundary",
     "vertical_scroll_margin": 5,
     "horizontal_scroll_margin": 10,
-    "icon_theme": "VSCode Icons",
+    "icon_theme": "VSCode Icons (Dark)",
     "theme": {
         "mode": "dark",
         "light": "Nightfox",
