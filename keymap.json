@@ -2,11 +2,7 @@
     {
         "bindings": {
             "alt-l": "workspace::ActivatePaneRight",
-            "alt-h": "workspace::ActivatePaneLeft"
-        }
-    },
-    {
-        "bindings": {
+            "alt-h": "workspace::ActivatePaneLeft",
             "ctrl-k *": null,
             "ctrl-k": null
         }
@@ -25,8 +21,7 @@
     {
         "context": "Editor && vim_mode == normal",
         "bindings": {
-            "alt-space": "editor::AcceptEditPrediction",
-            "tab": "editor::AcceptEditPrediction"
+            "alt-space": "editor::AcceptEditPrediction"
         }
       },
     {

@@ -1,6 +1,6 @@
 [
   {
-    "label": "Open lazygit",
+    "label": "open_lazygit",
     "command": "lazygit",
     "env": {
         "EDITOR": "zed --wait"
@@ -11,7 +11,7 @@
     "hide": "on_success"
   },
   {
-    "label": "Open vs code",
+    "label": "open_vs_code",
     "command": "code $ZED_WORKTREE_ROOT $ZED_RELATIVE_FILE",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
