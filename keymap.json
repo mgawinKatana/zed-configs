@@ -14,14 +14,14 @@
             "ctrl-c": "editor::ShowEditPrediction",
             "ctrl-l": "editor::AcceptPartialEditPrediction",
             "ctrl-j": "editor::NextEditPrediction",
-            "alt-space": "editor::AcceptEditPrediction",
+            "alt-.": "editor::AcceptEditPrediction",
             "ctrl-k": "editor::PreviousEditPrediction"
         }
     },
     {
         "context": "Editor && vim_mode == normal",
         "bindings": {
-            "alt-space": "editor::AcceptEditPrediction"
+            "g d": "editor::GoToDefinitionSplit"
         }
       },
     {
@@ -45,9 +45,10 @@
         }
     },
     {
-        "context": "vim_mode == visual",
+        "context": "Editor && vim_mode == visual",
         "bindings": {
-            "p": ["vim::Paste", { "preserve_clipboard": true }]
+            "p": ["vim::Paste", { "preserve_clipboard": true }],
+            "S": "vim::PushAddSurrounds"
         }
     },
     {
@@ -57,7 +58,7 @@
         }
     },
     {
-        "context": "vim_mode == normal || vim_mode == visual",
+        "context": "Editor && vim_mode == normal",
         "bindings": {
             "s": ["vim::PushSneak", {}],
             "S": ["vim::PushSneakBackward", {}]
