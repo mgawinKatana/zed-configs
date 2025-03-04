@@ -41,7 +41,7 @@
         "context": "Pane",
         "bindings": {
             "ctrl-tab": "pane::ActivateNextItem",
-            "ctrl-shift-tab": "pane::ActivatePrevItem"
+            "ctrl-shift-tab": "pane::ActivatePreviousItem"
         }
     },
     {
