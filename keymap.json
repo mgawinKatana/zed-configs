@@ -19,12 +19,6 @@
         }
     },
     {
-        "context": "Editor && vim_mode == normal",
-        "bindings": {
-            "g d": "editor::GoToDefinitionSplit"
-        }
-      },
-    {
         "context": "Workspace",
         "bindings": {
             "alt-x g": ["task::Spawn", { "task_name": "open_lazygit" }],
