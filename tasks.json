@@ -1,66 +1,42 @@
 [
-  {
-    "label": "open_lazygit",
-    "command": "lazygit -p $ZED_WORKTREE_ROOT",
-    "env": {
-        "EDITOR": "zed --wait"
+    {
+        "label": "open_lazygit",
+        "command": "lazygit -p $ZED_WORKTREE_ROOT",
+        "env": {
+            "EDITOR": "zed --wait"
+        },
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+        "hide": "on_success",
+        "shell": {
+            "with_arguments": {
+                "program": "/bin/bash",
+                "args": ["--norc", "--noprofile"]
+            }
+        }
     },
-    "use_new_terminal": false,
-    "allow_concurrent_runs": false,
-    "reveal": "always",
-    "hide": "on_success",
-    "shell": {
-        "with_arguments": {
-            "program": "/bin/bash",
-            "args": ["--norc", "--noprofile"]
-        }
-    }
-  },
-  {
-    "label": "open_vs_code",
-    "command": "code $ZED_WORKTREE_ROOT $ZED_RELATIVE_FILE",
-    "use_new_terminal": false,
-    "allow_concurrent_runs": false,
-    "reveal": "never",
-    "hide": "always"
-  },
-  {
-    "label": "hurl_run_file",
-    "command": "hurl --test $ZED_FILENAME 2> $ZED_STEM.out | jq > $ZED_STEM.out",
-    "use_new_terminal": false,
-    "allow_concurrent_runs": false,
-    "reveal": "never",
-    "hide": "never",
-    "cwd": "$ZED_DIRNAME",
-    "shell": {
-        "with_arguments": {
-            "program": "/bin/bash",
-            "args": ["--norc", "--noprofile"]
-        }
-    }
-  },
-  {
-      "label": "hurl_run_dir",
-      "command": "hurl --test . 2> $ZED_STEM.out | jq > $ZED_STEM.out",
-      "use_new_terminal": false,
-      "allow_concurrent_runs": false,
-      "reveal": "never",
-      "hide": "never",
-      "cwd": "$ZED_DIRNAME",
-      "shell": {
-          "with_arguments": {
-              "program": "/bin/bash",
-              "args": ["--norc", "--noprofile"]
-          }
-      }
-  },
-  {
-        "label": "hurl_run_selected",
-        "command": "echo '$ZED_SELECTED_TEXT' | hurl --test 2> $ZED_STEM.out | jq > $ZED_STEM.out",
+    {
+        "label": "open_vs_code",
+        "command": "code $ZED_WORKTREE_ROOT $ZED_RELATIVE_FILE",
         "use_new_terminal": false,
         "allow_concurrent_runs": false,
         "reveal": "never",
-        "hide": "never",
+        "hide": "always",
+        "shell": {
+            "with_arguments": {
+                "program": "/bin/bash",
+                "args": ["--norc", "--noprofile"]
+            }
+        }
+    },
+    {
+        "label": "hurl_run_file",
+        "command": "hurl --test $ZED_FILENAME 2> $ZED_STEM.out | jq > $ZED_STEM.out",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "never",
+        "hide": "always",
         "cwd": "$ZED_DIRNAME",
         "shell": {
             "with_arguments": {
@@ -68,5 +44,35 @@
                 "args": ["--norc", "--noprofile"]
             }
         }
-  }
+    },
+    {
+        "label": "hurl_run_dir",
+        "command": "hurl --test . 2> $ZED_STEM.out | jq > $ZED_STEM.out",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "never",
+        "hide": "always",
+        "cwd": "$ZED_DIRNAME",
+        "shell": {
+            "with_arguments": {
+                "program": "/bin/bash",
+                "args": ["--norc", "--noprofile"]
+            }
+        }
+    },
+    {
+        "label": "hurl_run_selected",
+        "command": "echo '$ZED_SELECTED_TEXT' | hurl --test 2> $ZED_STEM.out | jq > $ZED_STEM.out",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "never",
+        "hide": "always",
+        "cwd": "$ZED_DIRNAME",
+        "shell": {
+            "with_arguments": {
+                "program": "/bin/bash",
+                "args": ["--norc", "--noprofile"]
+            }
+        }
+    }
 ]
