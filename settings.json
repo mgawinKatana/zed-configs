@@ -75,7 +75,9 @@
     "tab_size": 4,
     "tabs": {
         "git_status": true,
-        "show_diagnostics": "errors"
+        "show_diagnostics": "errors",
+        "show_close_button": "hidden",
+        "activate_on_close": "neighbour"
     },
     "journal": {
         "hour_format": "hour24"
