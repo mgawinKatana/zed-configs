@@ -22,7 +22,10 @@
         "context": "Workspace",
         "bindings": {
             "alt-x g": ["task::Spawn", { "task_name": "open_lazygit" }],
-            "alt-x c": ["task::Spawn", { "task_name": "open_vs_code" }]
+            "alt-x c": ["task::Spawn", { "task_name": "open_vs_code" }],
+            "alt-x f": ["task::Spawn", { "task_name": "hurl_run_file" }],
+            "alt-x d": ["task::Spawn", { "task_name": "hurl_run_dir" }],
+            "alt-x s": ["task::Spawn", { "task_name": "hurl_run_selected" }]
         }
     },
     {

@@ -140,5 +140,8 @@
     },
     "file_finder": {
         "modal_max_width": "large"
+    },
+    "file_types": {
+        "JSON": ["out"]
     }
 }
