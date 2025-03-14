@@ -118,7 +118,13 @@
         "env": {
             "EDITOR": "zed"
         },
-        "font_family": "MesloLGS NFM"
+        "font_family": "MesloLGS NFM",
+        "shell": {
+            "with_arguments": {
+                "program": "zsh",
+                "args": ["--no-rcs"]
+            }
+        }
     },
 
     "collaboration_panel": {

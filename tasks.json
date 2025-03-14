@@ -11,8 +11,8 @@
         "hide": "on_success",
         "shell": {
             "with_arguments": {
-                "program": "/bin/bash",
-                "args": ["--norc", "--noprofile"]
+                "program": "zsh",
+                "args": ["--no-rcs"]
             }
         }
     },
@@ -25,8 +25,8 @@
         "hide": "always",
         "shell": {
             "with_arguments": {
-                "program": "/bin/bash",
-                "args": ["--norc", "--noprofile"]
+                "program": "zsh",
+                "args": ["--no-rcs"]
             }
         }
     },
@@ -40,8 +40,8 @@
         "cwd": "$ZED_DIRNAME",
         "shell": {
             "with_arguments": {
-                "program": "/bin/bash",
-                "args": ["--norc", "--noprofile"]
+                "program": "zsh",
+                "args": ["--no-rcs"]
             }
         }
     },
@@ -55,8 +55,8 @@
         "cwd": "$ZED_DIRNAME",
         "shell": {
             "with_arguments": {
-                "program": "/bin/bash",
-                "args": ["--norc", "--noprofile"]
+                "program": "zsh",
+                "args": ["--no-rcs"]
             }
         }
     },
@@ -70,8 +70,8 @@
         "cwd": "$ZED_DIRNAME",
         "shell": {
             "with_arguments": {
-                "program": "/bin/bash",
-                "args": ["--norc", "--noprofile"]
+                "program": "zsh",
+                "args": ["--no-rcs"]
             }
         }
     }
